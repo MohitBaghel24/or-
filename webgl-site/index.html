@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Maj — Digital Art & Creative Direction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Three.js Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Bottom Center Text -->
+  <div class="text-overlay text-center">
+    <p class="tagline">peer into the eye of almondgod</p>
+  </div>
+
+  <!-- Navigation Rings Labels (Hidden by default, shown on hover) -->
+  <div class="ring-labels">
+    <div class="ring-label" data-ring="0">About</div>
+    <div class="ring-label" data-ring="1">Works</div>
+    <div class="ring-label" data-ring="2">Philosophy</div>
+    <div class="ring-label" data-ring="3">Experiments</div>
+    <div class="ring-label" data-ring="4">Contact</div>
+  </div>
+
+  <!-- Overlay Sections (Hidden by default) -->
+  <div class="overlay-section overlay-about">
+    <div class="section-content">
+      <button class="close-btn">✕</button>
+      <h1>About</h1>
+      <p>A digital artist exploring the intersection of technology, light, and perception. Crafting immersive visual experiences through code and creativity.</p>
+      <p>Each piece is a meditation on depth, infinity, and the beauty of algorithmic design.</p>
+    </div>
+  </div>
+
+  <div class="overlay-section overlay-works">
+    <div class="section-content">
+      <button class="close-btn">✕</button>
+      <h1>Works</h1>
+      <p><strong>Orbital Depth</strong> — An exploration of concentric symmetry and infinite depth.</p>
+      <p><strong>Light Experiments</strong> — Playing with shader-based rendering and WebGL optimizations.</p>
+      <p><strong>Generative Geometry</strong> — Algorithmic art generated in real-time.</p>
+    </div>
+  </div>
+
+  <div class="overlay-section overlay-philosophy">
+    <div class="section-content">
+      <button class="close-btn">✕</button>
+      <h1>Philosophy</h1>
+      <p>Simplicity through complexity. Every line, every curve, every gradient serves a purpose.</p>
+      <p>Technology is a canvas. Code is poetry. Pixels tell stories.</p>
+      <p>Design should breathe. Animation should feel natural. Interaction should be intuitive.</p>
+    </div>
+  </div>
+
+  <div class="overlay-section overlay-experiments">
+    <div class="section-content">
+      <button class="close-btn">✕</button>
+      <h1>Experiments</h1>
+      <p>Pushing the boundaries of WebGL and Three.js.</p>
+      <p>Real-time shader compilation. GPU-accelerated particle systems. Procedural geometry.</p>
+      <p>Always exploring. Always iterating. Always learning.</p>
+    </div>
+  </div>
+
+  <div class="overlay-section overlay-contact">
+    <div class="section-content">
+      <button class="close-btn">✕</button>
+      <h1>Contact</h1>
+      <p>Let's collaborate. Create together. Push boundaries.</p>
+      <p>Email: hello@anandmaj.com</p>
+      <p>Instagram: @anandmaj | Twitter: @anandmaj</p>
+    </div>
+  </div>
+
+  <!-- Loading indicator -->
+  <div class="loading-indicator"></div>
+
+  <!-- Scripts -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@r128/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@r128/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
